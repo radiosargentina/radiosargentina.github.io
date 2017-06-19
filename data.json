@@ -1,54 +1,54 @@
 [
   {
-    "name": "AM 710",
-    "url": "http://www.minutouno.com/external/players/radio10/index.php"
-  },
-  {
-    "name": "AM 910 - La Red",
-    "url": "http://player.lsdlive.com/lared/player.html"
-  },
-  {
-    "name": "AM del Plata",
-    "url": "http://www.alsolnet.com/stream/amdelplata/"
-  },
-  {
-    "name": "FM Rock & Pop",
-    "url": "http://fmrockandpop.com/"
-  },
-  {
-    "name": "Mega 98.3",
-    "url": "http://www.minutouno.com/external/players/mega/index.php"
-  },
-  {
-    "name": "Aspen 102.3",
+    "name": "Aspen (FM 102.3)",
     "url": "http://player.fmaspen.com/"
   },
   {
-    "name": "Blue FM 100.7",
+    "name": "Blue (FM 100.7)",
     "url": "http://bluefm.com.ar/vivo/playeraudio.html"
   },
   {
-    "name": "Pop Radio 101.5",
+    "name": "Del Plata (AM 1030)",
+    "url": "http://www.alsolnet.com/stream/amdelplata/"
+  },
+  {
+    "name": "La Red (AM 910)",
+    "url": "http://player.lsdlive.com/lared/player.html"
+  },
+  {
+    "name": "Mega (FM 98.3)",
+    "url": "http://www.minutouno.com/external/players/mega/index.php"
+  },
+  {
+    "name": "Pop Radio (FM 101.5)",
     "url": "http://www.minutouno.com/external/players/pop/index.php"
   },
   {
-    "name": "Radio Con Vos 89.9",
-    "url": "http://www.stweb.tv/clientes/radioconvos/radio.html"
+    "name": "Radio 10 (AM 710)",
+    "url": "http://www.minutouno.com/external/players/radio10/index.php"
   },
   {
-    "name": "Radio Continental",
+    "name": "Radio Continental (AM 590)",
     "url": "http://player.continental.com.ar/widget/audio/Continental/93"
   },
   {
-    "name": "Radio Nacional",
+    "name": "Radio Con Vos (FM 89.9)",
+    "url": "http://www.stweb.tv/clientes/radioconvos/radio.html"
+  },
+  {
+    "name": "Radio Nacional (AM 870)",
     "url": "http://player.dcarsat.com.ar/rn_sc_rad1/"
   },
   {
-    "name": "Radio Rivadavia",
+    "name": "Radio Rivadavia (AM 630)",
     "url": "http://www.rivadavia.com.ar/en-vivo"
   },
   {
-    "name": "Vorterix",
+    "name": "Rock & Pop (FM 95.9)",
+    "url": "http://fmrockandpop.com/"
+  },
+  {
+    "name": "Vorterix (FM 92.1)",
     "url": "http://vorterix.com/?t=1"
   }
 ]
