@@ -1,0 +1,12 @@
+html,body {
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+#radio {
+  border-style: ridge;
+  border-width: 2px;
+  padding: 2px;
+  height: 90%;
+  width: 98%;
+}

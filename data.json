@@ -1,0 +1,54 @@
+[
+  {
+    "name": "AM 710",
+    "url": "http://www.minutouno.com/external/players/radio10/index.php"
+  },
+  {
+    "name": "AM 910 - La Red",
+    "url": "http://player.lsdlive.com/lared/player.html"
+  },
+  {
+    "name": "AM del Plata",
+    "url": "http://www.alsolnet.com/stream/amdelplata/"
+  },
+  {
+    "name": "FM Rock & Pop",
+    "url": "http://fmrockandpop.com/"
+  },
+  {
+    "name": "Mega 98.3",
+    "url": "http://www.minutouno.com/external/players/mega/index.php"
+  },
+  {
+    "name": "Aspen 102.3",
+    "url": "http://player.fmaspen.com/"
+  },
+  {
+    "name": "Blue FM 100.7",
+    "url": "http://bluefm.com.ar/vivo/playeraudio.html"
+  },
+  {
+    "name": "Pop Radio 101.5",
+    "url": "http://www.minutouno.com/external/players/pop/index.php"
+  },
+  {
+    "name": "Radio Con Vos 89.9",
+    "url": "http://www.stweb.tv/clientes/radioconvos/radio.html"
+  },
+  {
+    "name": "Radio Continental",
+    "url": "http://player.continental.com.ar/widget/audio/Continental/93"
+  },
+  {
+    "name": "Radio Nacional",
+    "url": "http://player.dcarsat.com.ar/rn_sc_rad1/"
+  },
+  {
+    "name": "Radio Rivadavia",
+    "url": "http://www.rivadavia.com.ar/en-vivo"
+  },
+  {
+    "name": "Vorterix",
+    "url": "http://vorterix.com/?t=1"
+  }
+]
