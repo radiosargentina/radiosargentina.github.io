@@ -9,11 +9,11 @@
   },
   {
     "name": "Radio 10 (AM 710)",
-    "url": "http://www.minutouno.com/external/players/radio10/index.php"
+    "url": "https://www.stweb.tv/indalo/radio10/indexs.php"
   },
   {
     "name": "AM 750 (AM 750)",
-    "url": "http://158.69.26.181:8050/AM750_AAC"
+    "url": "http://750.am/"
   },
   {
     "name": "Radio Nacional (AM 870)",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Mega (FM 98.3)",
-    "url": "http://www.minutouno.com/external/players/mega/index.php"
+    "url": "http://www.stweb.tv/indalo/mega/"
   },
   {
     "name": "Blue (FM 100.7)",
@@ -57,7 +57,7 @@
   },
   {
     "name": "Pop Radio (FM 101.5)",
-    "url": "http://www.minutouno.com/external/players/pop/index.php"
+    "url": "http://www.stweb.tv/indalo/pop/"
   },
   {
     "name": "Aspen (FM 102.3)",
