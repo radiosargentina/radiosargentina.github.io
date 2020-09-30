@@ -1,15 +1,15 @@
 [
   {
     "name": "Radio Continental (AM 590)",
-    "url": "http://player.continental.com.ar/widget/audio/Continental/93"
+    "url": "https://player.continental.com.ar/?autoplay=true"
   },
   {
     "name": "Radio Rivadavia (AM 630)",
-    "url": "http://www.rivadavia.com.ar/en-vivo"
+    "url": "https://rivadavia.com.ar/"
   },
   {
     "name": "Radio 10 (AM 710)",
-    "url": "https://www.stweb.tv/indalo/radio10/indexs.php"
+    "url": "https://www.radio10.com.ar/"
   },
   {
     "name": "AM 750 (AM 750)",
@@ -17,15 +17,7 @@
   },
   {
     "name": "Radio Nacional (AM 870)",
-    "url": "http://player.dcarsat.com.ar/rn_sc_rad1/"
-  },
-  {
-    "name": "La Red (AM 910)",
-    "url": "http://player.lsdlive.com/lared/player.html"
-  },
-  {
-    "name": "Del Plata (AM 1030)",
-    "url": "http://www.alsolnet.com/stream/amdelplata/"
+    "url": "http://vmf.edge-apps.net/embed/live.php?streamname=sc_rad1-100131&autoplay=true"
   },
   {
     "name": "--------------------",
@@ -41,7 +33,7 @@
   },
   {
     "name": "Vorterix (FM 92.1)",
-    "url": "http://vorterix.com/?t=1"
+    "url": "https://www.youtube.com/watch?v=FW8eVbk-coE"
   },
   {
     "name": "Nacional Rock (FM 93.7)",
@@ -53,7 +45,7 @@
   },
   {
     "name": "Rock & Pop (FM 95.9)",
-    "url": "http://fmrockandpop.com/"
+    "url": "https://fmrockandpop.com/vivo/"
   },
   {
     "name": "Clubber (FM 97.7)",
@@ -81,6 +73,6 @@
   },
   {
     "name": "Futurock",
-    "url": "http://futurock.fm/ahora-en-vivo-reproductor"
+    "url": "http://futurock.fm/"
   }
 ]
