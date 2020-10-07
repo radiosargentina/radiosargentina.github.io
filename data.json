@@ -13,11 +13,11 @@
   },
   {
     "name": "AM 750 (AM 750)",
-    "url": "http://750.am/"
+    "url": "https://750.am/"
   },
   {
     "name": "Radio Nacional (AM 870)",
-    "url": "http://vmf.edge-apps.net/embed/live.php?streamname=sc_rad1-100131&autoplay=true"
+    "url": "https://vmf.edge-apps.net/embed/live.php?streamname=sc_rad1-100131&autoplay=true"
   },
   {
     "name": "--------------------",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Radio Con Vos (FM 89.9)",
-    "url": "http://www.stweb.tv/clientes/radioconvos/radio.html"
+    "url": "https://www.stweb.tv/clientes/radioconvos/radio.html"
   },
   {
     "name": "Vorterix (FM 92.1)",
@@ -37,11 +37,11 @@
   },
   {
     "name": "Nacional Rock (FM 93.7)",
-    "url": "http://vmf.edge-apps.net/embed/live.php?streamname=sc_rad39-100131&autoplay=true"
+    "url": "https://vmf.edge-apps.net/embed/live.php?streamname=sc_rad39-100131&autoplay=true"
   },
   {
     "name": "Metro 95.1 (FM 95.1)",
-    "url": "http://www.metro951.com/vivo/player-audio.html"
+    "url": "https://www.metro951.com/vivo/player-audio.html"
   },
   {
     "name": "Rock & Pop (FM 95.9)",
@@ -49,11 +49,11 @@
   },
   {
     "name": "Clubber (FM 97.7)",
-    "url": "http://escuchoclubber.com.ar/"
+    "url": "https://escuchoclubber.com.ar/"
   },
   {
     "name": "Mega (FM 98.3)",
-    "url": "http://www.stweb.tv/indalo/mega/"
+    "url": "https://www.stweb.tv/indalo/mega/"
   },
   {
     "name": "La 100 (FM 99.9)",
@@ -61,18 +61,18 @@
   },
   {
     "name": "Blue (FM 100.7)",
-    "url": "http://bluefm.com.ar/vivo/playeraudio.html"
+    "url": "https://bluefm.com.ar/"
   },
   {
     "name": "Pop Radio (FM 101.5)",
-    "url": "http://www.stweb.tv/indalo/pop/"
+    "url": "https://www.stweb.tv/indalo/pop/"
   },
   {
     "name": "Aspen (FM 102.3)",
-    "url": "http://player.fmaspen.com/"
+    "url": "https://fmaspen.com/"
   },
   {
     "name": "Futurock",
-    "url": "http://futurock.fm/"
+    "url": "https://futurock.fm/"
   }
 ]
