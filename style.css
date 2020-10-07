@@ -3,10 +3,11 @@ html,body {
   overflow: hidden;
   text-align: center;
 }
+hr {
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
 #radio {
-  border-style: ridge;
-  border-width: 2px;
-  padding: 2px;
-  height: 50%;
+  height: 85%;
   width: 98%;
 }
