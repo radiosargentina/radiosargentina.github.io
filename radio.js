@@ -17,35 +17,7 @@ $(document).ready(function() {
     });
 });
 
-function listenToDefaultRadio(){
-    var index = getLastRadio();
-    var select = $('#radioSelect');
-    if (index >= select.children('option').length){
-        index = 0;
-    }
-    select.prop('selectedIndex', index);
-    listenTo(select.prop("value"));
-}
-
-function getLastRadio(){
-    if (isLocalStorageAvailable()) {
-        return localStorage.getItem('radioIndex') || 0;
-    } else {
-        return 0;
-    }
-}
-
-function saveLastRadio(index){
-    if (isLocalStorageAvailable()){
-        localStorage.setItem('radioIndex', index);
-    }
-}
-
-function listenTo(url) {
-    $('#radio').attr('src', url);
-}
-
-function isLocalStorageAvailable() {
+function checkLocalStorage() {
     try {
         var storage = window['localStorage'], x = '__storage_test__';
         storage.setItem(x, x);
@@ -55,4 +27,30 @@ function isLocalStorageAvailable() {
     catch(e) {
         return false;
     }
+}
+
+const isLocalStorageAvailable = checkLocalStorage();
+
+function listenToDefaultRadio(){
+    var index = getLastRadio();
+    var select = $('#radioSelect');
+    if (index >= select.children('option').length)
+        index = 0;
+    select.prop('selectedIndex', index);
+    listenTo(select.prop("value"));
+}
+
+function getLastRadio(){
+    if (isLocalStorageAvailable)
+        return localStorage.getItem('radioIndex') || 0;
+    return 0;
+}
+
+function saveLastRadio(index){
+    if (isLocalStorageAvailable)
+        localStorage.setItem('radioIndex', index);
+}
+
+function listenTo(url) {
+    $('#radio').attr('src', url);
 }
