@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url:'data.json',
+        url:'data.json?' + new Date(),
         type:'GET',
         dataType: 'json',
         success: function(radios) {
