@@ -3,20 +3,6 @@ const getJSON = async url => {
     return response.json();
 }
 
-function checkLocalStorage() {
-    try {
-        var storage = window['localStorage'], x = '__storage_test__';
-        storage.setItem(x, x);
-        storage.removeItem(x);
-        return true;
-    }
-    catch(e) {
-        return false;
-    }
-}
-
-const isLocalStorageAvailable = checkLocalStorage();
-
 function listenToDefaultRadio(){
     var index = getLastRadio();
     const select = document.getElementById('radioSelect');
@@ -28,14 +14,11 @@ function listenToDefaultRadio(){
 }
 
 function getLastRadio(){
-    if (isLocalStorageAvailable)
-        return localStorage.getItem('radioIndex') || 0;
-    return 0;
+    return localStorage.getItem('radioIndex') || 0;
 }
 
 function saveLastRadio(index){
-    if (isLocalStorageAvailable)
-        localStorage.setItem('radioIndex', index);
+    localStorage.setItem('radioIndex', index);
 }
 
 function listenTo(url) {
