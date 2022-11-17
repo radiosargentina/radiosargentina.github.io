@@ -4,10 +4,9 @@ const getJSON = async url => {
 }
 
 function listenToDefaultRadio(){
-    var index = getLastRadio();
     const select = document.getElementById('radioSelect');
-    if (index >= select.options.length)
-        index = 0;
+    var index = getLastRadio();
+    index = (index >= select.options.length) ? 0 : index;
     option = select.options[index];
     option.selected = true;
     listenTo(option.value);

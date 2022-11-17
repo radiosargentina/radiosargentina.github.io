@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script>
-    if (location.protocol !== "https:") {
-      location.protocol = "https:";
-    }
-  </script>
   <meta charset="UTF-8">
+  <title>Radios Argentinas</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radios Argentinas</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <link rel="stylesheet" href="style.css">
-  <script src="radio.js"></script>
 </head>
-<body class="container">
+<body>
   <br>
   <select id="radioSelect" onchange="onSelectRadio(this)"></select>
   <br><br>
   <iframe id="radio" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"></iframe>
+  <script src="radio.js"></script>
 </body>
 </html>
