@@ -1,21 +1,7 @@
-$(document).ready(function() {
-    $.ajax({
-        url:'stations.json?ts=' + Date.now(),
-        type:'GET',
-        dataType: 'json',
-        success: function(radios) {
-            $.each(radios, function(index, object) {
-                $('#radioSelect').append($('<option>').text(object['name']).attr('value', object['url']));
-            });
-            listenToDefaultRadio();
-        }
-    });
-
-    $('#radioSelect').change(function () {
-        saveLastRadio(this.selectedIndex);
-        listenTo(this.value);
-    });
-});
+const getJSON = async url => {
+    const response = await fetch(url);
+    return response.json();
+}
 
 function checkLocalStorage() {
     try {
@@ -33,11 +19,12 @@ const isLocalStorageAvailable = checkLocalStorage();
 
 function listenToDefaultRadio(){
     var index = getLastRadio();
-    var select = $('#radioSelect');
-    if (index >= select.children('option').length)
+    const select = document.getElementById('radioSelect');
+    if (index >= select.options.length)
         index = 0;
-    select.prop('selectedIndex', index);
-    listenTo(select.prop("value"));
+    option = select.options[index];
+    option.selected = true;
+    listenTo(option.value);
 }
 
 function getLastRadio(){
@@ -52,5 +39,21 @@ function saveLastRadio(index){
 }
 
 function listenTo(url) {
-    $('#radio').attr('src', url);
+    document.getElementById('radio').src = url;
 }
+
+function populateCombo(radios){
+    const select = document.getElementById('radioSelect');
+
+    radios.forEach(function(radio) { 
+        select.options[select.options.length] = new Option(radio['name'], radio['url']);
+    });
+    listenToDefaultRadio();
+}
+
+function onSelectRadio(item){
+    saveLastRadio(item.selectedIndex);
+    listenTo(item.value);
+}
+
+getJSON('stations.json?ts=' + Date.now()).then(radios => populateCombo(radios));
