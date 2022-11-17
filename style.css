@@ -3,10 +3,6 @@ html,body {
   overflow: hidden;
   text-align: center;
 }
-hr {
-  margin-bottom: 1%;
-  margin-top: 1%;
-}
 select {
   font-family: Verdana;
   font-size: large;
