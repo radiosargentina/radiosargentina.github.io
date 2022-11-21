@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html><html><head>
   <meta charset="UTF-8">
-  <title>Radios Argentinas</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Radios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 </head>
-<body>
-  <br>
-  <select id="radioSelect" onchange="onSelectRadio(this)"></select>
-  <br><br>
-  <iframe id="radio" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"></iframe>
-  <script src="radio.js"></script>
-</body>
-</html>
+<body onload="load()">
+  <hr><select onchange="onChangeRadio(this)"></select><hr>
+  <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"></iframe><hr>
+  <script  src="radio.js"></script>
+</body></html>

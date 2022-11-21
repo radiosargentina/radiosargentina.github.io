@@ -1,41 +1,14 @@
-const getJSON = async url => {
-    const response = await fetch(url);
-    return response.json();
+const radioPlayer = document.getElementsByTagName('iframe')[0];
+function onChangeRadio(radio){
+    radioPlayer.src = radio.value;
+    localStorage.setItem('lastRadioIndex', radio.selectedIndex);
 }
-
-function listenToDefaultRadio(){
-    const select = document.getElementById('radioSelect');
-    var index = getLastRadio();
-    index = (index >= select.options.length) ? 0 : index;
-    option = select.options[index];
-    option.selected = true;
-    listenTo(option.value);
+async function load() {
+    const radioSelect = document.getElementsByTagName('select')[0];
+    (await (await fetch('stations.json')).json()).forEach(e => 
+        radioSelect.append(new Option(e['name'], e['url'])));
+    let lastRadio = radioSelect[localStorage.getItem('lastRadioIndex')];
+    lastRadio = (Boolean(lastRadio) ? lastRadio : radioSelect[0]);
+    lastRadio.selected = true;
+    radioPlayer.src = lastRadio.value;
 }
-
-function getLastRadio(){
-    return localStorage.getItem('radioIndex') || 0;
-}
-
-function saveLastRadio(index){
-    localStorage.setItem('radioIndex', index);
-}
-
-function listenTo(url) {
-    document.getElementById('radio').src = url;
-}
-
-function populateCombo(radios){
-    const select = document.getElementById('radioSelect');
-
-    radios.forEach(function(radio) { 
-        select.options[select.options.length] = new Option(radio['name'], radio['url']);
-    });
-    listenToDefaultRadio();
-}
-
-function onSelectRadio(item){
-    saveLastRadio(item.selectedIndex);
-    listenTo(item.value);
-}
-
-getJSON('stations.json?ts=' + Date.now()).then(radios => populateCombo(radios));
