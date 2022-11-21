@@ -5,7 +5,7 @@ function onChangeRadio(radio){
 }
 async function load() {
     const radioSelect = document.getElementsByTagName('select')[0];
-    (await (await fetch('stations.json')).json()).forEach(e => 
+    (await (await fetch('stations')).json()).forEach(e => 
         radioSelect.append(new Option(e['name'], e['url'])));
     let lastRadio = radioSelect[localStorage.getItem('lastRadioIndex')];
     lastRadio = (Boolean(lastRadio) ? lastRadio : radioSelect[0]);
