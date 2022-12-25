@@ -1,10 +1,10 @@
 const radioPlayer = document.getElementsByTagName('iframe')[0];
+const radioSelect = document.getElementsByTagName('select')[0];
 function onChangeRadio(radio){
     radioPlayer.src = radio.value;
     localStorage.setItem('lastRadioIndex', radio.selectedIndex);
 }
 async function load() {
-    const radioSelect = document.getElementsByTagName('select')[0];
     (await (await fetch('stations')).json()).forEach(e => 
         radioSelect.append(new Option(e['name'], e['url'])));
     let lastRadio = radioSelect[localStorage.getItem('lastRadioIndex')];
